@@ -1,0 +1,26 @@
+@keyframes fadeIn {
+  from { opacity: 0; }
+}
+
+.otp .animate-flicker {
+  animation: fadeIn 1s infinite alternate;
+}
+
+.otp .advanced-search-options {
+  padding: 1ch 0 0 0;
+}
+
+.otp .search-options {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+
+.otp .search-options > * {
+  margin-bottom: 5px;
+  height: 24px;
+}
+
+.otp .search-plan-button-container {
+  padding: 1rem;
+}

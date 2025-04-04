@@ -1,0 +1,257 @@
+.otp.mobile .mobile-padding {
+  padding: 10px;
+}
+
+.otp .mobile-bottom-button-container {
+  bottom: 0;
+  height: 40px;
+  left: 0;
+  position: fixed;
+  right: 0;
+}
+
+/* Navbar settings */
+
+.otp.mobile .navbar {
+  border: none;
+  margin-bottom: 0;
+}
+
+.otp .navbar .mobile-header {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  max-width: 90%;
+  text-align: center;
+}
+
+.otp .navbar .mobile-header-text {
+  color: white;
+  display: inline-block;
+  font-size: 18px;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .otp .navbar .mobile-header-text {
+    word-break: break-all;
+  }
+}
+
+.otp .navbar .mobile-header-action {
+  display: inline-block;
+}
+
+.otp .navbar .mobile-header-action > button {
+  color: white;
+}
+
+.otp .navbar .mobile-back {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 18px;
+}
+
+.otp .navbar .mobile-close {
+  color: white;
+  font-size: 18px;
+  position: fixed;
+  right: 6px;
+  top: 4px;
+}
+
+/* Welcome screen */
+
+.otp.mobile .welcome-location {
+  height: 60px;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 50px;
+}
+
+.otp.mobile .welcome-map {
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 110px;
+}
+
+/* Location search screen */
+
+.otp.mobile .location-search {
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 50px;
+}
+
+/* Main search screen */
+
+.otp.mobile .search-settings {
+  box-shadow: 3px 0px 12px #00000052;
+  height: 250px;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 50px;
+}
+
+.otp.mobile .search-map {
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 300px;
+}
+
+/* Batch routing search screen */
+
+.otp.mobile .batch-search-map {
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 282px;
+}
+
+/* Detailed options screen */
+
+.otp.mobile .options-main-content {
+  bottom: 55px;
+  left: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: fixed;
+  right: 0;
+  top: 50px;
+}
+
+.otp.mobile .options-lower-tray {
+  bottom: 0;
+  height: 55px;
+  left: 0;
+  position: fixed;
+  right: 0;
+}
+
+/* Results screen: normal display */
+
+.otp.mobile .mobile-narrative-header {
+  background-color: #444;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  height: 40px;
+  left: 0;
+  position: fixed;
+  right: 0;
+  text-align: center;
+}
+
+.otp.mobile .mobile-narrative-container {
+  bottom: 20px;
+  left: 0;
+  padding: 8px 12px;
+  position: fixed;
+  right: 0;
+}
+
+.otp.mobile .dots-container {
+  bottom: 0;
+  height: 20px;
+  left: 0;
+  position: fixed;
+  right: 0;
+  text-align: center;
+}
+
+.otp.mobile .dots-container .dot {
+  background-color: #ddd;
+  border-radius: 4px;
+  display: inline-block;
+  height: 8px;
+  margin: 0px 3px;
+  vertical-align: 2px;
+  width: 8px;
+}
+
+.otp.mobile .dots-container .dot.active {
+  background-color: #888;
+}
+
+.otp.mobile .results-map {
+  bottom: 140px;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 100px;
+}
+
+/* Results screen: error display */
+
+.otp.mobile .results-error-map {
+  height: 200px;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 100px;
+}
+
+.otp.mobile .results-error-message {
+  bottom: 0;
+  left: 0;
+  padding-top: 12px;
+  position: fixed;
+  right: 0;
+}
+
+/* User Settings */
+
+.otp.mobile .user-settings {
+  background-color: white;
+  border-radius: 5px;
+  bottom: 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  height: 165px;
+  left: 0;
+  margin-bottom: 18px;
+  overflow-y: scroll;
+  position: fixed;
+  right: 0;
+  z-index: 999999;
+}
+
+/* Stop/Trip/Route Viewer screens */
+
+.otp.mobile .viewer-container {
+  bottom: 0;
+  left: 0;
+  overflow-y: auto;
+  position: fixed;
+  right: 0;
+  top: 250px;
+}
+
+.otp.mobile .viewer-map {
+  height: 200px;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 50px;
+}
+
+.otp.mobile .route-viewer-header {
+  margin: 0;
+}
+
+@media (max-width: 768px){
+  .panel-default {
+    width: 90%;
+  }
+}
+

@@ -1,0 +1,273 @@
+/* shared stop/trip viewer styles */
+
+.otp .route-viewer-header,
+.otp .trip-viewer-header {
+  padding: 12px;
+  margin: 5px;
+}
+
+.otp .route-viewer,
+.otp .stop-viewer,
+.otp .trip-viewer,
+.otp .stop-viewer-body {
+  display: flex;
+  flex-direction: column;
+  flex-flow: column;
+  height: 100%;
+}
+
+.otp .route-viewer-body::before {
+  background-color: #33333333;
+  content: "";
+  display: block;
+  height: 2px;
+}
+
+@keyframes yellowfade {
+  from {
+    background: yellow;
+  }
+  to {
+    background: transparent;
+  }
+}
+
+/* Used to briefly highlight an element and then fade to transparent. */
+.highlighted-item {
+  /* Waits until scrolling for this item is (almost) finished before starting the fading effect. */
+  animation-delay: 0.5s;
+  animation-duration: 1.5s;
+  animation-name: yellowfade;
+}
+
+.otp .route-viewer-body,
+.otp .stop-viewer-body,
+.otp .trip-viewer-body {
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding-left: 0;
+}
+.otp .stop-viewer-body,
+.otp .trip-viewer-body {
+  padding: 12px;
+}
+
+.otp .stop-viewer .back-button-container,
+.otp .trip-viewer .back-button-container,
+.otp .route-viewer .back-button-container {
+  float: left;
+  margin-right: 10px;
+}
+
+.otp .trip-viewer .header-text,
+.otp .route-viewer .header-text,
+.otp .advanced-settings .header-text {
+  font-weight: 700;
+  font-size: 24px;
+  margin: 0;
+}
+
+.otp .trip-viewer .header-text,
+.otp .route-viewer .header-text {
+  display: contents;
+}
+
+.otp .route-viewer .header-text.route-expanded {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.otp .route-viewer .header-text.route-expanded span {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* stop viewer styles */
+
+.otp p.day-label {
+  font-weight: 500;
+  text-align: right;
+  margin: 0;
+  opacity: 0.8;
+  display: inline;
+}
+
+.stop-view .route-name {
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  padding-left: 10px;
+}
+
+/* trip viewer styles */
+
+.otp .trip-viewer .stop-time {
+  float: left;
+  font-size: 11px;
+  padding-right: 5px;
+  padding-top: 12px;
+  text-align: right;
+  width: 60px;
+}
+
+.otp .trip-viewer .strip-map-container {
+  position: relative;
+  float: left;
+  width: 20px;
+  height: 30px;
+}
+
+.otp .trip-viewer .strip-map-highlight {
+  background-color: rgba(19, 193, 193, 0.5);
+  height: 30px;
+  position: absolute;
+  width: 20px;
+}
+
+.otp .trip-viewer .strip-map-highlight-first {
+  background-color: rgba(19, 193, 193, 0.5);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 28px;
+  position: absolute;
+  top: 2px;
+  width: 20px;
+}
+
+.otp .trip-viewer .strip-map-highlight-last {
+  background-color: rgba(19, 193, 193, 0.5);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  height: 28px;
+  position: absolute;
+  top: 0px;
+  width: 20px;
+}
+
+.otp .trip-viewer .strip-map-line {
+  position: absolute;
+  left: 8px;
+  width: 4px;
+  background-color: #000;
+  height: 30px;
+}
+
+.otp .trip-viewer .strip-map-line-first {
+  position: absolute;
+  top: 15px;
+  left: 8px;
+  width: 4px;
+  background-color: #000;
+  height: 15px;
+}
+
+.otp .trip-viewer .strip-map-line-last {
+  position: absolute;
+  top: 0;
+  left: 8px;
+  width: 4px;
+  background-color: #000;
+  height: 15px;
+}
+
+.otp .trip-viewer .strip-map-icon {
+  position: absolute;
+  left: 3.5px;
+  top: 8px;
+  font-size: 12.5px;
+  color: #000;
+}
+
+.otp .trip-viewer .stop-name {
+  font-size: 14px;
+  margin-left: 10px;
+  overflow: hidden;
+  padding-top: 8px;
+  white-space: nowrap;
+}
+
+.otp .trip-viewer .stop-button-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 5px;
+  width: 100%;
+}
+
+/* Route Viewer Updates */
+.search-and-filter {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.search-and-filter select {
+  margin-left: 10px;
+  text-overflow: ellipsis;
+  min-width: 105px;
+
+  border: none;
+  background: #eee;
+  border-radius: 5px;
+  padding: 5px;
+}
+.search-and-filter select option {
+  /* This allows the dropdowns to shrink and stretch */
+  max-width: 0;
+}
+
+.search-and-filter .routeFilter {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 0fr 2fr 1fr;
+  width: 100%;
+}
+.search-and-filter .routeSearch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search-and-filter .routeSearch input {
+  border: none;
+  padding: 0.125em 0.5em;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+.routeSearch input::-webkit-search-cancel-button {
+  /* show clear button on webkit browsers */
+  -webkit-appearance: searchfield-cancel-button;
+}
+
+.routeSearch,
+.routeSearch input {
+  width: 100%;
+}
+
+.route-viewer-body .noRoutesFoundMessage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+/* Nearby View Location Field Styles */
+.nearby-view-location-field {
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 10px;
+  border: none !important;
+  box-shadow: 0px 0px 5px 1px inset rgb(0 0 0 / 0.05);
+  color: #111;
+  display: flex !important;
+  height: 50px;
+  margin-bottom: -5px !important;
+  transition: background-color 0.1s ease-out;
+}
+.nearby-view-location-field:hover,
+.nearby-view-location-field:active {
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+.nearby-view-location-field input {
+  width: 100% !important;
+  background: transparent !important;
+}

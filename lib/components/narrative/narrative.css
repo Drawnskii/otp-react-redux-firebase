@@ -1,0 +1,85 @@
+:root {
+  --hover-color: #ffe;
+}
+
+.otp .options > .header {
+  margin: 1em;
+  font-size: 16px;
+}
+
+/* Options scroll bar  */
+.otp .options > .list::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.otp .options > .list::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.otp .options > .list::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+.otp .options > .list::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* REALTIME ALERT */
+
+.otp .realtime-alert {
+  padding: 12px 20px;
+  margin-bottom: 20px;
+  background-color: #fdf8d6;
+}
+
+.otp .simple-realtime-annotation {
+  color: #888;
+  font-size: 14px;
+  text-align: center;
+  padding: 6px;
+  background-color: #fcf9d3;
+}
+
+/* TRIP TOOLS ROW */
+
+.otp .trip-tools-container {
+  background-color: #eee;
+  border-radius: 6px;
+  margin: 15px 5px;
+  padding: 10px 16px;
+
+}
+
+.otp .trip-tools-container h2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 0;
+}
+.otp .trip-tools {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.otp .trip-tools .button-container {
+  display: inline-block;
+  padding: 3px;
+}
+
+.otp .trip-tools .tool-button {
+  font-size: 12px;
+  width: 110px;
+  padding: 4px;
+}
+
+.otp .trip-tools .dropdown-menu {
+  font-size: 12px;
+  text-align: left;
+  padding: 4px;
+}
+
+.otp .trip-tools .dropdown-menu > li > a {
+  padding: 3px 5px;
+}

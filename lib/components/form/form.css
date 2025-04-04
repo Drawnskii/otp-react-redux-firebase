@@ -1,0 +1,258 @@
+/* Plan trip button */
+
+.otp .plan-trip-button,
+.view-results-button {
+  width: 100%;
+}
+.otp .plan-trip-button[disabled] {
+  opacity: 0.75;
+}
+
+.otp .bottom-fixed {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 10px;
+  height: 55px;
+}
+
+.otp .white-fade {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 1)
+  );
+  z-index: 100;
+}
+
+/* Date-Time Modal */
+
+.otp .date-time-modal .button-row {
+  margin-bottom: 20px;
+}
+
+.otp .date-time-modal .button-row .selected {
+  background-color: #ccc;
+}
+
+/* Date/Time selectors */
+
+/* Remove up/down arrows on date/time input (to save on width) */
+.otp input[type="date"].datetime-slim::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+/* Prevent the calendar picker from having a white margin that covers the date */
+.otp input[type="date"].datetime-slim::-webkit-calendar-picker-indicator {
+  background-color: rgba(0, 0, 0, 0);
+  margin-left: 0px;
+}
+
+.otp input[type="time"].datetime-slim::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+/* The calendar icon on the date/time input fields does not have the pointer cursor by default so apply it here.
+    This will not work for Firefox. */
+.otp input[type="date"]::-webkit-calendar-picker-indicator, .otp input[type="time"]::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+}
+
+.otp .date-time-selector .col-xs-4,
+.otp .date-time-selector .col-xs-6 {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.otp .date-time-selector .date-option-button {
+  width: 100%;
+  font-size: 14px;
+}
+
+/* switch button */
+.otp .switch-button .hidden {
+  display: inline-block;
+  height: 0;
+  overflow: hidden;
+  width: 0;
+}
+
+.otp .switch-button-container {
+  position: absolute;
+  top: 22px;
+  right: 32px;
+  z-index: 99;
+}
+
+.otp .switch-button-container-mobile {
+  position: absolute;
+  top: 32px;
+  right: 45px;
+  z-index: 99;
+}
+
+/* General settings */
+
+.otp.mobile .dropdown-selector {
+  font-size: 16px;
+  padding-top: 5px;
+}
+
+/* Error message */
+
+.otp .error-message {
+  margin: 16px;
+}
+
+.otp .error-message > .header {
+  font-size: 24px;
+  font-weight: 600;
+  border-bottom: 1px solid #bbb;
+  margin-bottom: 12px;
+  padding-bottom: 2px;
+}
+
+/* User settings */
+
+.otp .user-settings {
+  padding-top: 10px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-bottom: 20px;
+  margin: 10px 10px 0 10px;
+  min-height: 150px;
+  background-color: #f0f0f0;
+}
+
+.otp .user-settings .manage-link {
+  color: #2c6ba1;
+  font-weight: 600;
+}
+
+.otp .place-button {
+  padding: 5px 0 0 0;
+  text-align: left;
+}
+
+.otp .user-settings .section-header {
+  font-size: small;
+  color: #555;
+}
+
+.otp .place-item {
+  height: 45px;
+  list-style: none;
+}
+
+.otp .user-settings .place-view,
+.otp .user-settings .place-view {
+  padding-top: 4px;
+}
+
+.otp .place-item .place-text {
+  display: block;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.otp .place-item .place-detail {
+  display: block;
+  font-size: smaller;
+  padding-left: 18px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.otp .user-settings hr {
+  border-top: 1px solid #ccc;
+  margin: 5px;
+}
+
+.otp .user-settings .btn-link {
+  height: 100%;
+  padding: 2px;
+  border-radius: 3px;
+  color: #333;
+}
+
+.otp .user-settings .btn-link:hover {
+  background-color: #f5f5f5;
+  border: 1px solid lightgrey;
+  text-decoration: none;
+}
+
+.otp .user-settings .remember-settings .btn-link {
+  margin: 0 3px;
+  width: 25px;
+}
+
+.otp .user-settings .remember-settings .btn-link.active {
+  background-color: #084c8d;
+  color: #ffffff;
+}
+
+.otp .user-settings .remember-settings .btn-link.active:hover {
+  border: 1px solid grey;
+}
+
+.otp .user-settings .btn-link:focus {
+  background-color: #ddd;
+  border: 1px solid grey;
+  outline: none;
+  text-decoration: none;
+}
+
+.otp .user-settings .disclaimer {
+  font-size: x-small;
+}
+
+/* For Chrome/ium desktop browsers, if so configured,
+   set the date/time input controls to automatically show the date-time picker on focus.
+   This changes do not seem to affect Chrome/ium mobile browsers. */
+.otp .date-time-modal .date-time-selector.with-desktop-touchscreen input {
+  position: relative;
+}
+.otp
+  .date-time-modal
+  .date-time-selector.with-desktop-touchscreen
+  input::-webkit-calendar-picker-indicator {
+  background-position-x: right;
+  margin-inline-end: 8px;
+  position: absolute;
+  right: 0;
+  width: 100%;
+}
+.otp
+  .date-time-modal
+  .date-time-selector.with-desktop-touchscreen
+  input::-webkit-datetime-edit {
+  margin-inline-end: 8px;
+}
+
+.batch-routing-panel-location-fields {
+  display: block;
+  position: relative;
+}
+
+/* Highlight location fields when they update */
+@keyframes highlight {
+  from {
+    outline: 0px solid #fff;
+  }
+
+  to {
+    outline: 10px solid rgba(255, 247, 0, 0.7);
+  }
+}
+
+.animate-highlight {
+  outline: 0px solid #fff;
+  animation: 0.2s 4 alternate highlight;
+}
+.animate-highlight:focus-within {
+  animation: none;
+}

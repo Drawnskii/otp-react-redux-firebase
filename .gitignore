@@ -1,0 +1,25 @@
+# macOS
+.DS_Store
+
+# node stuff
+node_modules
+*.log
+
+# transpiled files
+build/*
+
+# testing stuff
+tmp
+coverage
+
+# built example app
+dist
+
+# secrets. Ignore any versions of config.yml, except for example.
+*config.yml
+!example-config.yml
+!test-config.yml
+!har-mock-config.yml
+
+# vscode extensions
+.vscode
